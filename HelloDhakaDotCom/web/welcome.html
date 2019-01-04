@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script>
+            history.forward();
+        </script>
+        <title>Welcome</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            td{
+                padding: 10px;
+            }
+
+            div{
+                width: 50%;
+                border: 1px solid black;
+                border-radius: 5px;
+                background-color: lightyellow;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    <center>
+        <h1>
+            Welcome
+        </h1>
+        
+        <div>
+            <form action ="AdminInfo" method="POST">
+                <fieldset>
+                    <legend>
+                        <strong>Admin Information</strong>
+                    </legend>                   
+                    <input type="radio" name="rd0" value="v0" checked/> View
+                    <input type="radio" name="rd0" value="i0" /> Insert
+                    <input type="radio" name="rd0" value="d0"/> Delete
+                    <h4><i>Fill up to insert or modify </i></h4>
+                    <table>
+                    <tr>
+                        <td>Admin</td>
+                        <td><input type ="text" name="h0" placeholder="Username"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type ="text" name="a0" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center"> <input type="submit" value="Enter" ></td>
+                    </tr>
+                </table>
+                </fieldset>
+            </form>
+        </div>
+        
+        <div>
+            <form action ="HotelInfo" method="POST">
+                <fieldset>
+                    <legend>
+                        <strong>Hotel Information</strong>
+                    </legend>                   
+                    <input type="radio" name="rd1" value="v1" checked/> View
+                    <input type="radio" name="rd1" value="i1" /> Insert
+                    <input type="radio" name="rd1" value="d1"/> Delete
+                    <h4><i>Fill up to insert or modify </i></h4>
+                    <table>
+                    <tr>
+                        <td>Hotel Name</td>
+                        <td><input type ="text" name="h1" placeholder="Hotel Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><input type ="text" name="a1" placeholder="Address"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center"> <input type="submit" value="Enter" ></td>
+                    </tr>
+                </table>
+                </fieldset>
+            </form>
+        </div>
+        
+             <div>
+            <form action ="HospitalInfo" method="GET">
+                <fieldset>
+                    <legend>
+                        <strong>Hospital Information</strong>
+                    </legend>                   
+                    <input type="radio" name="rd2" value="v2" checked/> View
+                    <input type="radio" name="rd2" value="i2" /> Insert
+                    <input type="radio" name="rd2" value="d2"/> Delete
+                    <h4><i>Fill up to insert or modify </i></h4>
+                    <table>
+                    <tr>
+                        <td>Hospital Name</td>
+                        <td><input type ="text" name="h2" placeholder="Hospital Name"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><input type ="text" name="a2" placeholder="Address"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center"> <input type="submit" value="Enter" ></td>
+                    </tr>
+                </table>
+                </fieldset>
+            </form>
+        </div>
+        
+         <div>
+            <form action ="PoliceStationInfo" method="GET">
+                <fieldset>
+                    <legend>
+                        <strong>Police Station Information</strong>
+                    </legend>                   
+                    <input type="radio" name="rd3" value="v3" checked/> View
+                    <input type="radio" name="rd3" value="i3" /> Insert
+                    <input type="radio" name="rd3" value="d3"/> Delete
+                    <h4><i>Fill up to insert or modify </i></h4>
+                    <table>
+                    <tr>
+                        <td>Police Station</td>
+                        <td><input type ="text" name="h3" placeholder="Station name"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><input type ="text" name="a3" placeholder="Address"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center"> <input type="submit" value="Enter" ></td>
+                    </tr>
+                </table>
+                </fieldset>
+            </form>
+        </div>
+        
+        <div>
+            <br>
+            <br>
+        <form action='http://localhost:41157/HelloDhakaDotCom/index.html'/>
+           <input type='submit' value='Log out' style='bottom'/> 
+        </form>
+        </div>
+        
+    </center>
+    </body>
+</html>
+
